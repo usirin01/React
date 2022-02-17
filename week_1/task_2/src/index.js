@@ -7,6 +7,7 @@ import Footer from './components/footer';
 ReactDOM.render(
   <React.StrictMode>
     <Header />
+    <Card />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
