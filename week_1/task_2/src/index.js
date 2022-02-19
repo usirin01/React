@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/header';
-import Card from './components/card';
-import Footer from './components/footer';
+import Header from './components/Header';
+import Card from './components/Card';
+import Footer from './components/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Card />
-    <Footer />
+      <Header />
+      <Card />
+      <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -17,3 +17,5 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 Header();
+Card();
+Footer();
