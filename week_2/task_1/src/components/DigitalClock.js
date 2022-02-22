@@ -37,4 +37,6 @@ function addZero(i) {
   return i;
 }
 
- setInterval(digitalClock, 1000); 
+ setInterval(DigitalClock, 1000);  
+
+ export default DigitalClock;

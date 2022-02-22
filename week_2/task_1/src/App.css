@@ -1,49 +1,49 @@
 html,body{
-    box-sizing: border-box;
-    height:100%;
-    padding:0px;
-    margin:0px;
-  }
-  #digital-clock{
-    display:block;
-    max-width:100%;
-    min-height:100%;
-    text-align:center;
-    margin: auto;
-    padding:1px;
-    background:black;
-    color:aqua;
-    line-height:0px;
-  }
-  #time-js{
-    font-size:60px;
-    font-weight:bold;
-    line-height:30px;
-    margin-top:30px
-  }
-  #today-js{
-    font-size:60px;
-    font-weight:bold;
-    color:#66ff66;
-    opacity:0.8;
-  }
-  #date-js{
-    font-weight:bold;
-    font-size:100px;
-    opacity:0.8;
-    color:#ccffff; 
-  }
-  #month-js{
-    font-weight:bold;
-    font-size:60px;
-    opacity:0.5;
-    color:#ccffff;
-    margin-top:-10px;
-  }
-  #year-js{
-    font-weight:bold;
-    font-size:150px;
-    opacity:0.2;
-    color:#ccffff;
-    margin-top:120px;
-  }
+  box-sizing: border-box;
+  height:100%;
+  padding:0px;
+  margin:0px;
+}
+#digital-clock{
+  display:block;
+  max-width:100%;
+  min-height:100%;
+  text-align:center;
+  margin: auto;
+  padding:1px;
+  background:black;
+  color:aqua;
+  line-height:0px;
+}
+#time-js{
+  font-size:60px;
+  font-weight:bold;
+  line-height:30px;
+  margin-top:30px
+}
+#today-js{
+  font-size:60px;
+  font-weight:bold;
+  color:#66ff66;
+  opacity:0.8;
+}
+#date-js{
+  font-weight:bold;
+  font-size:100px;
+  opacity:0.8;
+  color:#ccffff; 
+}
+#month-js{
+  font-weight:bold;
+  font-size:60px;
+  opacity:0.5;
+  color:#ccffff;
+  margin-top:-10px;
+}
+#year-js{
+  font-weight:bold;
+  font-size:150px;
+  opacity:0.2;
+  color:#ccffff;
+  margin-top:120px;
+}

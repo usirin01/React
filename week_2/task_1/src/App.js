@@ -1,5 +1,6 @@
-import Body from './components/Body';
 import './App.css';
+import Body from './components/Body';
+import DigitalClock from './components/DigitalClock';
 
 function App() {
   return (
