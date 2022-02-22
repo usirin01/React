@@ -1,3 +1,4 @@
+//create function for the Digital Clock
 function DigitalClock(){
   
     var todayHTML = document.getElementById('today-js');
@@ -39,4 +40,5 @@ function addZero(i) {
 
  setInterval(DigitalClock, 1000);  
 
+ //export 
  export default DigitalClock;
