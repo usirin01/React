@@ -17,6 +17,8 @@ const Personal = () => {
                     <Header title = "Person"/>
 
                         <div className="card" style={{ width: "18rem" }}>
+
+{/* We can addded all avatar to the page  */}
                             <img src={person.avatar} className="card-img-top"
                                 alt="..." />
                             <div className="card-body">
@@ -37,6 +39,8 @@ const Personal = () => {
                        
                         <Header title = "Children"/>
 
+{/* We reach children from PersonData  */}
+
                             {person.children.map((child, index) =>
 
                                     <div className="card" style={{ width: "18rem" }}>
@@ -55,6 +59,8 @@ const Personal = () => {
 
                         <div className="row">
                         <Header title = "Friends"/>
+
+{/* We reach friends from PersonData */}
                             {person.friends.map((friends, index) => (  
                             
                             <div className="card" style={{ width: "18rem" }}>
