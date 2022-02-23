@@ -1,5 +1,7 @@
 import React from 'react'
 import PersonalData from "../foreigners.json"
+import Header from './Header'
+
 const Personal = () => {
 
     return PersonalData.map((person) => {
@@ -12,7 +14,7 @@ const Personal = () => {
 
                     <div className="col-3">
 
-                        <div className="bg-danger">Person</div>
+                    <Header title = "Person"/>
 
                         <div className="card" style={{ width: "18rem" }}>
                             <img src={person.avatar} className="card-img-top"
@@ -32,7 +34,9 @@ const Personal = () => {
                     <div className="col-9">
 
                         <div className="row">
-                        <div className="bg-danger">Children</div>
+                       
+                        <Header title = "Children"/>
+
                             {person.children.map((child, index) =>
 
                                     <div className="card" style={{ width: "18rem" }}>
@@ -50,17 +54,17 @@ const Personal = () => {
                         </div>
 
                         <div className="row">
-                            <div classNameName="bg-danger">Friend</div>
+                        <Header title = "Friends"/>
                             {person.friends.map((friends, index) => (  
                             
-                            <div classNameName="card" style={{ width: "18rem" }}>
+                            <div className="card" style={{ width: "18rem" }}>
                                 <img src= {friends.avatar}
-                                    classNameName="card-img-top" alt="..." />
-                                <div classNameName="card-body">
-                                    <p classNameName="card-text">Firstname: {friends.firstName} </p>
-                                    <p classNameName="card-text">Gender: {friends.gender} </p>
-                                    <p classNameName="card-text">Birthday: {friends.birthday} </p>
-                                    <p classNameName="card-text">Phone: {friends.phone} </p>
+                                    className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <p className="card-text">Firstname: {friends.firstName} </p>
+                                    <p className="card-text">Gender: {friends.gender} </p>
+                                    <p className="card-text">Birthday: {friends.birthday} </p>
+                                    <p className="card-text">Phone: {friends.phone} </p>
                                 </div>
                             </div>))}
                           
