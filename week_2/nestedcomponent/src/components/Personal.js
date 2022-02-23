@@ -36,7 +36,7 @@ const Personal = () => {
                             {person.children.map((child, index) =>
 
                                     <div className="card" style={{ width: "18rem" }}>
-                                        <img src="https://robohash.org/inventoredolorumest.png?size=250x250&set=set1"
+                                        <img src={child.avatar}
                                             className="card-img-top" alt="..." />
                                         <div className="card-body">
                                             <p className="card-text">Firstname: {child.firstName} </p>
@@ -51,16 +51,19 @@ const Personal = () => {
 
                         <div className="row">
                             <div classNameName="bg-danger">Friend</div>
+                            {person.friends.map((friends, index) => (  
+                            
                             <div classNameName="card" style={{ width: "18rem" }}>
-                                <img src="https://robohash.org/inventoredolorumest.png?size=250x250&set=set1"
+                                <img src= {friends.avatar}
                                     classNameName="card-img-top" alt="..." />
                                 <div classNameName="card-body">
-                                    <p classNameName="card-text">Firstname: </p>
-                                    <p classNameName="card-text">Gender: </p>
-                                    <p classNameName="card-text">Birthday: </p>
-                                    <p classNameName="card-text">Phone: </p>
+                                    <p classNameName="card-text">Firstname: {friends.firstName} </p>
+                                    <p classNameName="card-text">Gender: {friends.gender} </p>
+                                    <p classNameName="card-text">Birthday: {friends.birthday} </p>
+                                    <p classNameName="card-text">Phone: {friends.phone} </p>
                                 </div>
-                            </div>
+                            </div>))}
+                          
 
                         </div>
 
