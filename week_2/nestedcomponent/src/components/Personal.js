@@ -61,6 +61,7 @@ const Personal = () => {
                         <Header title = "Friends"/>
 
 {/* We reach friends from PersonData */}
+
                             {person.friends.map((friends, index) => (  
                             
                             <div className="card" style={{ width: "18rem" }}>
