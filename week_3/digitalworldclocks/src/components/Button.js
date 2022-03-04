@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col ,DropdownButton , Dropdown } from 'react-bootstrap'
 
-const Button = (props) => {
+const Button = () => {
 
     
   const oneClick = (e) => {
