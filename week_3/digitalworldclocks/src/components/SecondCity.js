@@ -1,12 +1,12 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
 
-const FirstCity = (props) => {
+const SecondCity = (props) => {
   return (
     <React.Fragment>
-      <Col>FirstCity {props.firstlocaltime}</Col>
+      <Col>Zürich {props.secondlocaltime}</Col>
     </React.Fragment>
   )
 }
 
-export default FirstCity;
+export default SecondCity;

@@ -4,6 +4,7 @@ import { Row } from 'react-bootstrap';
 import FirstCity from "./components/FirstCity";
 import SecondCity from "./components/SecondCity";
 import ThirdCity from "./components/ThirdCity";
+import Button from "./components/Button";
 
 const App = () => {
     const [firstlocaltime, setFirstLocalTime] = useState('');
@@ -12,9 +13,9 @@ const App = () => {
 
     setInterval(() => {
         const time = new Date();
-        setFirstLocalTime(time.toLocaleString(""));
-        setSecondLocalTime(time.toLocaleString(""));
-        setThirdLocalTime(time.toLocaleString(""));
+        setFirstLocalTime(time.toLocaleString("tr-TR"));
+        setSecondLocalTime(time.toLocaleString("de-DE"));
+        setThirdLocalTime(time.toLocaleString("en-US"));
     }, 1000);
 
     return (
@@ -23,6 +24,7 @@ const App = () => {
                 <FirstCity firstlocaltime={firstlocaltime} />
                 <SecondCity secondlocaltime={secondlocaltime} />
                 <ThirdCity thirdlocaltime={thirdlocaltime} />
+                <Button />
             </Row>
         </React.Fragment>
     );
