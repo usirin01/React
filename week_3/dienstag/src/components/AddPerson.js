@@ -2,8 +2,8 @@ import React from 'react'
 
 const AddPerson = ({addPerson}) => {
 
-    const [firstName, setFirstName] = useState("aa");
-    const [lastName, setLastName] = useState("bb");
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
 
     const handleClick = (e) => {
         e.preventDefault();
