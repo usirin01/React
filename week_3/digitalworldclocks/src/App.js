@@ -11,12 +11,21 @@ const App = () => {
     const [secondlocaltime, setSecondLocalTime] = useState('');
     const [thirdlocaltime, setThirdLocalTime] = useState('');
 
-    setInterval(() => {
-        const time = new Date();
-        setFirstLocalTime(time.toLocaleString("tr-TR"));
-        setSecondLocalTime(time.toLocaleString("de-DE"));
-        setThirdLocalTime(time.toLocaleString("en-US"));
-    }, 1000);
+    setInterval((offsetUTC) => {
+        // create new instance of Date
+        const current_date = new Date();
+
+        // now you need to get UTC time in msec
+        const utc_time = current_date.getTime() + (current_date.getTimezoneOffset() * 60000);
+ 
+        // create instance of several cities
+        const new_date_instance = new Date(utc_time); //+ (3600000*offset));
+
+
+        setFirstLocalTime(new_date_instance.toLocaleString('London', '+1'));
+        setSecondLocalTime(new_date_instance.toLocaleString('Zürich', '+0'));
+        setThirdLocalTime(new_date_instance.toLocaleString('New York', '+6'));
+    }, );
 
     return (
         <React.Fragment>
