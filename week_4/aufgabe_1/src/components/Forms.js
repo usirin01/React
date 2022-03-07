@@ -32,7 +32,7 @@ const Forms = ({addperson}) => {
                     <input type='password' placeholder='Please Repeat Password' 
                     value={confirm} onChange={(e) => setConfirm(e.target.value)}/>
                 </form>
-                <button type='submit' onClick={handleClick}></button>
+                <button type='submit' onClick={handleClick}>Submit</button>
             </div>
         </React.Fragment>
     )
