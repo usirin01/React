@@ -26,13 +26,13 @@ const handleClick = (e) => {
                <div className="row">
                  <form type='submit'>
                   <input   className="form-control m-1" placeholder="First name" type="text"  value={firstname} 
-                  onChange = {(e)=> setFirstname(e.target.value)}    />
+                  onChange = {(e)=> setFirstname(e.target.value)}    /> <br></br>
                   <input   className="form-control m-1" placeholder="Last name"   type="text"  value={lastname}  
-                  onChange = {(e)=> setLastname(e.target.value)}   />
+                  onChange = {(e)=> setLastname(e.target.value)}   /> <br></br>
                   <input   className="form-control m-1"  placeholder="email"  type="email"  value={email}   
-                  onChange = {(e)=> setEmail(e.target.value)}     />
+                  onChange = {(e)=> setEmail(e.target.value)}     /> <br></br>
                   <input   className="form-control m-1" placeholder="password" type="password"  value={password}  
-                  onChange = {(e)=> setPassword(e.target.value)}     />
+                  onChange = {(e)=> setPassword(e.target.value)}     /> <br></br>
                   </form>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                       <button className="btn btn-primary" type="button" onClick={handleClick} >Add</button>

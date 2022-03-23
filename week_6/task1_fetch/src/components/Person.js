@@ -1,5 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Person = ({ addperson }) => {
   const newform = addperson.map((person, index) => (
@@ -12,7 +11,7 @@ const Person = ({ addperson }) => {
       <td>
         <div className="d-grid gap-2 d-md-flex justify-content-md-end">
           <button className="btn btn-danger" type="button">
-            <FontAwesomeIcon icon="fa-solid fa-trash-can" />
+            <p>Delete</p>
           </button>
         </div>
       </td>

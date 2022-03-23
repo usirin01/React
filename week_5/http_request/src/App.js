@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Form from './components/Form';
 import Person from './components/Person';
 
@@ -10,6 +10,14 @@ function App() {
   const saveform = (person) => {
     setAddperson([...addpeople,person]);
   };
+
+  useEffect(() => {
+    const getData = async () => {
+      const response = await fetch('http://localhost:3000/employee')
+      const incomingdata = await response.json()
+    };
+  getData()
+  }, [])
 
   return (
     <div className="App">
