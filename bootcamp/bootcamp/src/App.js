@@ -1,6 +1,8 @@
+
+import ChooseFruits from './components/ChooseFruits';
 import './App.css';
 import Helloworld from './components/Helloworld';
-import MapAdd from './components/MapAdd';
+import Postman from './components/Postman';
 
 function App() {
   return (
@@ -8,7 +10,8 @@ function App() {
       <Helloworld firstName="Hi" lastName="Coders!"/>
       <Helloworld firstName="Umit" lastName="S.!"/>
       <Helloworld firstName="Hans" lastName="Wiedermann!"/>
-      <MapAdd />
+      <ChooseFruits />
+      <Postman />
     </div>
   );
 }
