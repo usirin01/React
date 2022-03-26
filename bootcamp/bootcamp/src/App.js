@@ -3,6 +3,7 @@ import ChooseFruits from './components/ChooseFruits';
 import './App.css';
 import Helloworld from './components/Helloworld';
 import Postman from './components/Postman';
+import Delete from './components/Delete';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Helloworld firstName="Hans" lastName="Wiedermann!"/>
       <ChooseFruits />
       <Postman />
+      <Delete />
     </div>
   );
 }
