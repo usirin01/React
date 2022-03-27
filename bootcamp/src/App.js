@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
+import ChooseFruits from './components/ChooseFruits';
 import './App.css';
+import Helloworld from './components/Helloworld';
+import Postman from './components/Postman';
+import Delete from './components/Delete';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container">
+      <Helloworld firstName="Hi" lastName="Coders!"/>
+      <Helloworld firstName="Umit" lastName="S.!"/>
+      <Helloworld firstName="Hans" lastName="Wiedermann!"/>
+      <ChooseFruits />
+      <Postman />
+      <Delete />
     </div>
   );
 }
