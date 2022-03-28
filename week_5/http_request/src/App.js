@@ -8,7 +8,7 @@ function App() {
   const [addperson, setAddperson] = useState([]);
 
   const saveform = (person) => {
-    setAddperson([...addpeople,person]);
+    setAddperson([...addperson,person]);
   };
 
   useEffect(() => {

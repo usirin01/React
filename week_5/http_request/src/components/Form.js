@@ -1,6 +1,7 @@
 import React from 'react'
+import { useState } from 'react';
 
-const Form = () => {
+const Form = ({saveform}) => {
     const [firstname, setFirstname] = useState('');
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
