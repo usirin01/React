@@ -7,7 +7,7 @@ const Navs = () => {
     <div id="navbar">
       <ul className="nav bg-info">
           <li className="nav-link">
-           <Link to="/">HOME</Link> 
+           <Link exact to="/">HOME</Link> 
           </li>
           <li className="nav-link">
            <Link to="/About">ABOUT</Link>  
