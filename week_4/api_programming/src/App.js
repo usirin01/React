@@ -20,7 +20,7 @@ const url = "https://api.weatherbit.io/v2.0/current?lat=35.7796&lon=-78.6382&key
 
   return (
     <div className="App">
-      ...data
+            {apiList.map((item) => <h2>{item.data}</h2>)}
     </div>
   );
 }
